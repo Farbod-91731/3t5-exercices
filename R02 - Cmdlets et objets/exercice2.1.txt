@@ -7,86 +7,86 @@ Dans cet exercice, vous devez identifier si la commande donnée est un alias, un
 - Si c'est une commande externe, tentez d'identifier son fichier de programme.
 
 1. ps
-    <Type>     
-    <Réponse>  
+    <alias>     
+    <Get-Process>  
 
 2. shcm
-    <Type>     
-    <Réponse>  
+    <alias>     
+    <Show-Command>  
 
 3. Get-ChildItem
-    <Type>     
-    <Réponse>  
+    <cmdlet>     
+    <dir, ls, gci>  
 
 4. pwd
-    <Type>     
-    <Réponse>  
+    <alias>     
+    <Get-Location>  
 
 5. Set-Location
-    <Type>     
-    <Réponse>  
+    <cmdlet>     
+    <sl>  
 
 6. copy
-    <Type>     
-    <Réponse>  
+    <alias>     
+    <Copy-Item>  
 
 7. ping
-    <Type>     
-    <Réponse>  
+    < une commande externe  >     
+    <C:\Windows\System32\ >  
 
 8. Get-PSDrive
-    <Type>     
-    <Réponse>  
+    <cmdlet>     
+    <gdr>  
 
 9. ni
-    <Type>     
-    <Réponse>  
+    <alias>     
+    <New-Item>  
 
 10. Write-Output
-    <Type>     
-    <Réponse>  
+    <cmdlet>     
+    <echo, write>  
 
 11. gsv
-    <Type>     
-    <Réponse>  
+    <alias>     
+    <Get-Service>  
 
 12. Remove-Item
-    <Type>     
-    <Réponse>  
+    <cmdlet>     
+    <del, erase, rd, ri, rm, rmdir>  
 
 13. ren
-    <Type>     
-    <Réponse>  
+    <alias>     
+    <Rename-Item>  
 
 14. ipconfig
-    <Type>     
-    <Réponse>  
+    <commande externe>     
+    <C:\WINDOWS\system32\ipconfig.exe>  
 
 15. wget
-    <Type>     
-    <Réponse>  
+    <alias>     
+    <Invoke-WebRequest>  
 
 16. Move-Item
-    <Type>     
-    <Réponse>  
+    <cmdlet>     
+    <mi, move, mv>  
 
 17. cat
-    <Type>     
-    <Réponse>  
+    <alias>     
+    <Get-Content>  
 
 18. Start-Process
-    <Type>     
-    <Réponse>  
+    <cmdlet>     
+    <saps, start>  
 
 19. kill
-    <Type>     
-    <Réponse>  
+    <alias>     
+    <Stop-Process>  
 
 20. taskkill
-    <Type>     
-    <Réponse>  
+    <commande externe >     
+    <C:\WINDOWS\system32\taskkill.exe>  
 
 21. Invoke-History
-    <Type>     
-    <Réponse>  
+    <cmdlet>     
+    <ihy, r>  
 
