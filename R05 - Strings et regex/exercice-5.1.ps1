@@ -20,7 +20,7 @@ $env:Path -split ';' | ForEach-Object { $_.Replace('\','/') } | Format-Table
 #### 5.1.4
 # En utilisant la variable suivante, trouver la ligne de commande qui donne le
 #     nombre de mots dans ce texte.
-
+($montexte -split '\s+').Count
 $montexte = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. "      + `
     "Donec interdum ut lorem eget consequat. Nam sed leo hendrerit diam "    + `
     "pharetra blandit. Vestibulum enim diam, congue sit amet sem in, "       + `
@@ -44,7 +44,7 @@ $montexte = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. "      + `
 #     nombre de phrases.
 
 
-
+($montexte -split '\.').Count - 1
 
 #### 5.1.6
 # En utilisant une expression régulière, valider si la chaîne de caractères 
