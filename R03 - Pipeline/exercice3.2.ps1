@@ -10,32 +10,32 @@
 # 1. À l'aide des commandes Get-ChildItem et Select-Object, obtenez la liste de tous les fichiers se terminant par 
 #    l'extension .EXE du répertoire C:\Windows, en affichant seulement le nom complet, la date de dernière modification 
 #    et la date de création.
-
+Get-ChildItem -path C:\Windows | Select-Object FullName,LastWriteTime,CreationTime | Where-Object FullName -like "*.exe"
 
 
 # 2. Sauvegardez toute l'information retournée par Get-ComputerInfo dans le fichier info.txt (à créer dans le répertoire 
 #    courant).
 
-
-
+Get-ComputerInfo > info.txt
+Get-ComputerInfo | Out-File info.txt
 # 3. À l'aide de la commande Get-Item, affichez le texte contenu dans ce fichier.
-
+Get-Item -path C:\Users\andal\info.txt | Get-Content
 
 
 # 4. Dressez la liste des cartes réseau à l'aide de la commande Get-NetAdapter sous forme de tableau avec seulement leur 
 #    nom, leur description et leur adresse MAC.
-
+Get-NetAdapter | Select-Object Name,Description,MacAddress | Format-Table
 
 
 # 5. Créez un nouveau répertoire nommé Minou dans le répertoire courant, puis utilisez le pipeline pour entrer dans ce 
 #    répertoire immédiatement après en une seule ligne de commande.
-
+New-Item -Type Directory -Name "Minou" | Set-Location
 
 
 # 6. Démarrez Notepad à l'aide de la commande Start-Process, mais faites-le en affichant son numéro de processus (PID) 
 #    dans la console. N'affichez que son numéro de processus, rien d'autre, sans l'en-tête de colonne "PID". (*Attention, 
 #    cette commande ne produit pas d'objet de manière automatique, il faut le provoquer*).
-
+Start-Process notepad -PassThru | Select-Object -ExpandProperty Id
 
 
 # 7. 🏆 Obtenez la liste de toutes les adresses IPv4 de votre ordinateur. On souhaite avoir les informations détaillées 
